@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #c1c1c1;
+}
+
+.page_1 {
+    background-image: url("../Assests/WhatsApp\ Image\ 2024-03-21\ at\ 12.47.00_d17a5b2b.jpg");
+    height: 100vh;
+    margin: 0;
+}
+
+.page_1 h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 100px;
+    z-index: 1;
+}
+
+.heading_text {
+    display: flex;
+    justify-content: center;
+    margin-top: 35vh;
+}
+
+.text-center h1{
+    font-size: 50px;
+
+}
+
+.page_2 {
+    padding: 10px;
+    background-color: #f2f2f2;
+    max-width: 100vw;
+    height: auto;
+    margin: 10px;
+    border: 2px solid black;
+    
+}
+
+.input_form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+}   
+
+input[type="text"] {
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+
+input[type="file"]{
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.or{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button[type="submit"]{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"]{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.output{
+   margin:auto; 
+   display: none;
+}
+
+.page_3 {
+    /* display: grid; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 10px;
+    background-color: #f2f2f2;
+    max-width: 100vw;
+    height: auto;
+    margin: 10px;
+    display: none;
+    border: 2px solid black;
+    background-color: #c1c1c1;
+
+}
+
+.video_container {
+    text-align: center;
+}
+
+.page_4{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.page_5{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c1c1c1;
+}
+
+p{
+    font-size: 20px;
+}

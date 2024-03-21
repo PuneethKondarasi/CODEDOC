@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Text File</title>
+    <style>
+      #output {
+        white-space: pre-wrap;
+      }
+      input {
+        margin-top: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="myFile" />
+    <pre id="output"></pre>
+
+    <script>
+      const input = document.getElementById("myFile");
+      const output = document.getElementById("output");
+
+      input.addEventListener("change", function () {
+        if (this.files && this.files[0]) {
+          const myFile = this.files[0];
+          const reader = new FileReader();
+
+          reader.addEventListener("load", function (e) {
+            const textWithHyperlinks = e.target.result.replace(
+              /(https?:\/\/[^\s]+)/g,
+              '<a href="$1">$1</a>'
+            );
+            output.innerHTML = textWithHyperlinks;
+          });
+
+          reader.readAsText(myFile);
+        }
+      });
+    </script>
+  </body>
+</html>

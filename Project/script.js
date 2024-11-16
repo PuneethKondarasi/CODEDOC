@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function searchStudyMaterial(topic) {
-    const cx = 'd4df6337f841b45f8';
-    const apiKey = 'AIzaSyDeACpLmuXdB39g4rOutDrx2ObmDB6aJaU'; 
+    const cx = 'Your Google Custom Search Engine ID';
+    const apiKey = 'Your Google API Key'; 
 
     const url = `https://www.googleapis.com/customsearch/v1?q=${topic}&cx=${cx}&key=${apiKey}&num=5`;
 
@@ -44,7 +44,7 @@ function displaySearchResults(results) {
 }
 
 function searchYouTubePlaylists(topic) {
-    const apiKey = 'AIzaSyDeACpLmuXdB39g4rOutDrx2ObmDB6aJaU';
+    const apiKey = 'Your YouTube API Key';
     const maxResults = 4;
 
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${topic}&key=${apiKey}&maxResults=${maxResults}&type=playlist`;
